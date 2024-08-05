@@ -1,0 +1,40 @@
+Git cannot access the 100GBPS of data directly. With the help of DVC we will keep track to store
+
+DVC wil only be used for tracking the data files,right. GIT specifically used for track the entire other code information ansd whatever
+configuration file required for th DVC
+
+DVC init will initialize the DVC
+
+git init
+
+pip install dvc 
+
+dvc init
+
+git status -- automatically dvc files got committed.
+
+
+git commit -m " "
+
+dvc add data/data.txt  - the file tracked by dvc not git. .gitignore is created to ignore the data.txt file due to dvc is tracking 
+no need to track by git.
+data\data.txt.dvc will be the hash value which map with the data
+## This is the first version-- hash d41d8cd98f00b204e9800998ecf8427e. Based on the hash key file is created to located.
+
+git can track only data\.gitignore,data\data.txt.dvc
+
+
+git add data/data.txt.dvc
+git add data/.gitignore
+
+add second line in the data evry time u run dvc add data/data.txt it will new hash key. In hash key the data will seen
+
+git add data/data.txt.dvc
+git add data/.gitignore
+
+git commit -m ""
+git log
+
+git checkout 560196f61dd0be8fbc8fbdf91ba0a17de1499e52
+
+dvc checkout will give which file the changes happened in the commit. that file will give
